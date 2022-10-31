@@ -52,7 +52,7 @@ except ImportError:
 
 LOADING_KEYS = [structure.BrainImageTypes.GroundTruth]  # the list of data we will load
 
-def label_separation(new_train_dir: str, new_test_dir: str, data_train_dir: str, data_test_dir: str):
+def label_separation(new_train_dir: str, new_test_dir: str, data_train_dir: str, data_test_dir: str, labels: list):
     """Brain label separation.
 
         The main routine executes the medical image analysis pipeline:
@@ -109,11 +109,11 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        '--data_test_dir',
-        type=str,
-        default=os.path.normpath(os.path.join(script_dir, '../data/test/')),
-        help='Directory with testing data.'
+        '--labels',
+        type=list,
+        default=[1, 2],
+        help='Labels to preserve.'
     )
 
     args = parser.parse_args()
-    label_separation(args.new_train_dir, args.new_test_dir, args.data_train_dir, args.data_test_dir)
+    label_separation(args.new_train_dir, args.new_test_dir, args.data_train_dir, args.data_test_dir, )
