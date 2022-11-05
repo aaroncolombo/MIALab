@@ -1,0 +1,24 @@
+paths:
+  data_atlas_dir: ${hydra:runtime.cwd}/../data/atlas
+pipeline:
+  name: pipeline_all
+  paths:
+    result_dir: ${hydra:runtime.cwd}/./mia-result_all
+    data_train_dir: ${hydra:runtime.cwd}/../data/train/
+    data_test_dir: ${hydra:runtime.cwd}/../data/test/
+  params:
+    n_estimators: 10
+    max_depth: 10
+    loading_keys:
+    - T1w
+    - T2w
+    - GroundTruth
+    - BrainMask
+    - RegistrationTransform
+    pre_process_params:
+      skullstrip_pre: true
+      normalization_pre: true
+      registration_pre: true
+      coordinates_feature: true
+      intensity_feature: true
+      gradient_intensity_feature: true
