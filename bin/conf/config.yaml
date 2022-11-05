@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - pipeline: pipeline_all
+
+paths:
+  data_atlas_dir: ${hydra:runtime.cwd}/../data/atlas
+  data_train_dir_orig: ${hydra:runtime.cwd}/../data/train/
+  data_test_dir_orig: ${hydra:runtime.cwd}/../data/test/
+
+params:
+  loading_keys_pipeline: [ T1w,
+                  T2w,
+                  GroundTruth,
+                  BrainMask,
+                  RegistrationTransform ]
+

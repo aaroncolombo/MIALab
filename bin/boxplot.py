@@ -33,14 +33,14 @@ if __name__ == '__main__':
     parser.add_argument(
         '--result_file',
         type=str,
-        default='./mia-result/2022-10-08-19-32-34/results.csv',
+        default='./mia-result_old/2022-10-08-19-32-34/results.csv',
         help='Name of the file containing the results.'
     )
 
     parser.add_argument(
         '--result_dir',
         type=str,
-        default=os.path.normpath(os.path.join(script_dir, './mia-result/2022-10-08-19-32-34')),
+        default=os.path.normpath(os.path.join(script_dir, 'mia-result_old/2022-10-08-19-32-34')),
         help='Directory for results.'
     )
 

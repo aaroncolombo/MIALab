@@ -57,15 +57,15 @@ class BrainImageFilePathGenerator(FilePathGenerator):
 
         # the commented file_names are for the registration group
 
-        if file_key == structure.BrainImageTypes.T1w:
+        if file_key == structure.BrainImageTypes.T1w.name:
             file_name = 'T1native'
-        elif file_key == structure.BrainImageTypes.T2w:
+        elif file_key == structure.BrainImageTypes["T2w"].name:
             file_name = 'T2native'
-        elif file_key == structure.BrainImageTypes.GroundTruth:
+        elif file_key == structure.BrainImageTypes["GroundTruth"].name:
             file_name = 'labels_native'
-        elif file_key == structure.BrainImageTypes.BrainMask:
+        elif file_key == structure.BrainImageTypes["BrainMask"].name:
             file_name = 'Brainmasknative'
-        elif file_key == structure.BrainImageTypes.RegistrationTransform:
+        elif file_key == structure.BrainImageTypes["RegistrationTransform"].name:
             return os.path.join(root_dir, 'affine.txt')
         else:
             raise ValueError('Unknown key')

@@ -1,0 +1,15 @@
+name: pipeline_all
+paths:
+  result_dir: ./multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}/mia-result_all
+  data_train_dir: ${hydra:runtime.cwd}/../data/train/
+  data_test_dir: ${hydra:runtime.cwd}/../data/test/
+params:
+  n_estimators: 10
+  max_depth: 10
+  pre_process_params: { 'training': True,
+                        'skullstrip_pre': True,
+                        'normalization_pre': True,
+                        'registration_pre': True,
+                        'coordinates_feature': True,
+                        'intensity_feature': True,
+                        'gradient_intensity_feature': True }

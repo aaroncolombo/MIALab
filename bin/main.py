@@ -15,6 +15,9 @@ import numpy as np
 import pymia.data.conversion as conversion
 import pymia.evaluation.writer as writer
 
+import hydra
+from omegaconf import DictConfig
+
 try:
     import mialab.data.structure as structure
     import mialab.utilities.file_access_utilities as futil
@@ -28,14 +31,14 @@ except ImportError:
     import mialab.utilities.pipeline_utilities as putil
     import boxplot as boxplot
 
-LOADING_KEYS = [structure.BrainImageTypes.T1w,
-                structure.BrainImageTypes.T2w,
-                structure.BrainImageTypes.GroundTruth,
-                structure.BrainImageTypes.BrainMask,
-                structure.BrainImageTypes.RegistrationTransform]  # the list of data we will load
+# LOADING_KEYS = [structure.BrainImageTypes.T1w,
+#                 structure.BrainImageTypes.T2w,
+#                 structure.BrainImageTypes.GroundTruth,
+#                 structure.BrainImageTypes.BrainMask,
+#                 structure.BrainImageTypes.RegistrationTransform]  # the list of data we will load
 
-
-def main(result_dir: str, data_atlas_dir: str, data_train_dir: str, data_test_dir: str):
+@hydra.main(version_base=None, config_path="conf", config_name="config")
+def main(cfg: DictConfig):
     """Brain tissue segmentation using decision forests.
 
     The main routine executes the medical image analysis pipeline:
@@ -54,41 +57,41 @@ def main(result_dir: str, data_atlas_dir: str, data_train_dir: str, data_test_di
     np.random.seed(42)
 
     # load atlas images
-    putil.load_atlas_images(data_atlas_dir)
+    putil.load_atlas_images(cfg.paths.data_atlas_dir)
 
     print('-' * 5, 'Training...')
 
     # crawl the training image directories
-    crawler = futil.FileSystemDataCrawler(data_train_dir,
-                                          LOADING_KEYS,
+    crawler = futil.FileSystemDataCrawler(cfg.pipeline.paths.data_train_dir,
+                                          cfg.params.loading_keys_pipeline,
                                           futil.BrainImageFilePathGenerator(),
                                           futil.DataDirectoryFilter())
-    pre_process_params = {'skullstrip_pre': True,
-                          'normalization_pre': True,
-                          'registration_pre': True,
-                          'coordinates_feature': True,
-                          'intensity_feature': True,
-                          'gradient_intensity_feature': True}
+    # pre_process_params = {'skullstrip_pre': True,
+    #                       'normalization_pre': True,
+    #                       'registration_pre': True,
+    #                       'coordinates_feature': True,
+    #                       'intensity_feature': True,
+    #                       'gradient_intensity_feature': True}
 
     # load images for training and pre-process
-    images = putil.pre_process_batch(crawler.data, pre_process_params, multi_process=False)
+    images = putil.pre_process_batch(crawler.data, cfg.pipeline.params.pre_process_params, multi_process=False)
 
     # generate feature matrix and label vector
     data_train = np.concatenate([img.feature_matrix[0] for img in images])
     labels_train = np.concatenate([img.feature_matrix[1] for img in images]).squeeze()
 
-    warnings.warn('Random forest parameters not properly set.')
+    #  warnings.warn('Random forest parameters not properly set.')
     forest = sk_ensemble.RandomForestClassifier(max_features=images[0].feature_matrix[0].shape[1],
-                                                n_estimators=10,
-                                                max_depth=10)
+                                                n_estimators=cfg.pipeline.params.n_estimators,
+                                                max_depth=cfg.pipeline.params.max_depth)
 
     start_time = timeit.default_timer()
     forest.fit(data_train, labels_train)
     print(' Time elapsed:', timeit.default_timer() - start_time, 's')
 
     # create a result directory with timestamp
-    t = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
-    result_dir = os.path.join(result_dir, t)
+    # t = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+    result_dir = os.path.join(os.getcwd(), cfg.pipeline.paths.result_dir)
     os.makedirs(result_dir, exist_ok=True)
 
     print('-' * 5, 'Testing...')
@@ -97,14 +100,14 @@ def main(result_dir: str, data_atlas_dir: str, data_train_dir: str, data_test_di
     evaluator = putil.init_evaluator()
 
     # crawl the training image directories
-    crawler = futil.FileSystemDataCrawler(data_test_dir,
-                                          LOADING_KEYS,
+    crawler = futil.FileSystemDataCrawler(cfg.pipeline.paths.data_test_dir,
+                                          cfg.pipeline.params.loading_keys,
                                           futil.BrainImageFilePathGenerator(),
                                           futil.DataDirectoryFilter())
 
     # load images for testing and pre-process
-    pre_process_params['training'] = False
-    images_test = putil.pre_process_batch(crawler.data, pre_process_params, multi_process=False)
+    cfg.pipeline.params.pre_process_params['training'] = False
+    images_test = putil.pre_process_batch(crawler.data, cfg.pipeline.params.pre_process_params, multi_process=False)
 
     images_prediction = []
     images_probabilities = []
@@ -123,7 +126,7 @@ def main(result_dir: str, data_atlas_dir: str, data_train_dir: str, data_test_di
         image_probabilities = conversion.NumpySimpleITKImageBridge.convert(probabilities, img.image_properties)
 
         # evaluate segmentation without post-processing
-        evaluator.evaluate(image_prediction, img.images[structure.BrainImageTypes.GroundTruth], img.id_)
+        evaluator.evaluate(image_prediction, img.images[structure.BrainImageTypes.GroundTruth.name], img.id_)
 
         images_prediction.append(image_prediction)
         images_probabilities.append(image_probabilities)
@@ -134,7 +137,7 @@ def main(result_dir: str, data_atlas_dir: str, data_train_dir: str, data_test_di
                                                      post_process_params, multi_process=True)
 
     for i, img in enumerate(images_test):
-        evaluator.evaluate(images_post_processed[i], img.images[structure.BrainImageTypes.GroundTruth],
+        evaluator.evaluate(images_post_processed[i], img.images[structure.BrainImageTypes.GroundTruth.name],
                            img.id_ + '-PP')
 
         # save results
@@ -166,38 +169,40 @@ def main(result_dir: str, data_atlas_dir: str, data_train_dir: str, data_test_di
 
 if __name__ == "__main__":
     """The program's entry point."""
+    #
+    # script_dir = os.path.dirname(sys.argv[0])
+    #
+    # parser = argparse.ArgumentParser(description='Medical image analysis pipeline for brain tissue segmentation')
+    #
+    # parser.add_argument(
+    #     '--result_dir',
+    #     type=str,
+    #     default=os.path.normpath(os.path.join(script_dir, './mia-result_old')),
+    #     help='Directory for results.'
+    # )
+    #
+    # parser.add_argument(
+    #     '--data_atlas_dir',
+    #     type=str,
+    #     default=os.path.normpath(os.path.join(script_dir, '../data/atlas')),
+    #     help='Directory with atlas data.'
+    # )
+    #
+    # parser.add_argument(
+    #     '--data_train_dir',
+    #     type=str,
+    #     default=os.path.normpath(os.path.join(script_dir, '../data/train/')),
+    #     help='Directory with training data.'
+    # )
+    #
+    # parser.add_argument(
+    #     '--data_test_dir',
+    #     type=str,
+    #     default=os.path.normpath(os.path.join(script_dir, '../data/test/')),
+    #     help='Directory with testing data.'
+    # )
+    #
+    # args = parser.parse_args()
+    # main(args.result_dir, args.data_atlas_dir, args.data_train_dir, args.data_test_dir)
 
-    script_dir = os.path.dirname(sys.argv[0])
-
-    parser = argparse.ArgumentParser(description='Medical image analysis pipeline for brain tissue segmentation')
-
-    parser.add_argument(
-        '--result_dir',
-        type=str,
-        default=os.path.normpath(os.path.join(script_dir, './mia-result')),
-        help='Directory for results.'
-    )
-
-    parser.add_argument(
-        '--data_atlas_dir',
-        type=str,
-        default=os.path.normpath(os.path.join(script_dir, '../data/atlas')),
-        help='Directory with atlas data.'
-    )
-
-    parser.add_argument(
-        '--data_train_dir',
-        type=str,
-        default=os.path.normpath(os.path.join(script_dir, '../data/train/')),
-        help='Directory with training data.'
-    )
-
-    parser.add_argument(
-        '--data_test_dir',
-        type=str,
-        default=os.path.normpath(os.path.join(script_dir, '../data/test/')),
-        help='Directory with testing data.'
-    )
-
-    args = parser.parse_args()
-    main(args.result_dir, args.data_atlas_dir, args.data_train_dir, args.data_test_dir)
+    main()

@@ -67,24 +67,24 @@ class FeatureExtractor:
         Returns:
             structure.BrainImage: The image with extracted features.
         """
-        # todo: add T2w features
-        warnings.warn('No features from T2-weighted image extracted.')
 
         if self.coordinates_feature:
             atlas_coordinates = fltr_feat.AtlasCoordinates()
             self.img.feature_images[FeatureImageTypes.ATLAS_COORD] = \
-                atlas_coordinates.execute(self.img.images[structure.BrainImageTypes.T1w])
+                atlas_coordinates.execute(self.img.images[structure.BrainImageTypes.T1w.name])
 
         if self.intensity_feature:
-            self.img.feature_images[FeatureImageTypes.T1w_INTENSITY] = self.img.images[structure.BrainImageTypes.T1w]
-            self.img.feature_images[FeatureImageTypes.T2w_INTENSITY] = self.img.images[structure.BrainImageTypes.T2w]
+            self.img.feature_images[FeatureImageTypes.T1w_INTENSITY] = \
+                self.img.images[structure.BrainImageTypes.T1w.name]
+            self.img.feature_images[FeatureImageTypes.T2w_INTENSITY] = \
+                self.img.images[structure.BrainImageTypes.T2w.name]
 
         if self.gradient_intensity_feature:
             # compute gradient magnitude images
-            self.img.feature_images[FeatureImageTypes.T1w_GRADIENT_INTENSITY] = \
-                sitk.GradientMagnitude(self.img.images[structure.BrainImageTypes.T1w])
-            self.img.feature_images[FeatureImageTypes.T2w_GRADIENT_INTENSITY] = \
-                sitk.GradientMagnitude(self.img.images[structure.BrainImageTypes.T2w])
+            self.img.feature_images[FeatureImageTypes.T1w_GRADIENT_INTENSITY.name] = \
+                sitk.GradientMagnitude(self.img.images[structure.BrainImageTypes.T1w.name])
+            self.img.feature_images[FeatureImageTypes.T2w_GRADIENT_INTENSITY.name] = \
+                sitk.GradientMagnitude(self.img.images[structure.BrainImageTypes.T2w.name])
 
         self._generate_feature_matrix()
 
@@ -110,7 +110,7 @@ class FeatureExtractor:
             # and use background_mask=mask_background in get_mask()
 
             mask = fltr_feat.RandomizedTrainingMaskGenerator.get_mask(
-                self.img.images[structure.BrainImageTypes.GroundTruth],
+                self.img.images[structure.BrainImageTypes.GroundTruth.name],
                 [0, 1, 2, 3, 4, 5],
                 [0.0003, 0.004, 0.003, 0.04, 0.04, 0.02])
 
@@ -124,7 +124,7 @@ class FeatureExtractor:
             axis=1)
 
         # generate labels (note that we assume to have a ground truth even for testing)
-        labels = self._image_as_numpy_array(self.img.images[structure.BrainImageTypes.GroundTruth], mask)
+        labels = self._image_as_numpy_array(self.img.images[structure.BrainImageTypes.GroundTruth.name], mask)
 
         self.img.feature_matrix = (data.astype(np.float32), labels.astype(np.int16))
 
@@ -183,7 +183,7 @@ def pre_process(id_: str, paths: dict, **kwargs) -> structure.BrainImage:
 
     # load image
     path = paths.pop(id_, '')  # the value with key id_ is the root directory of the image
-    path_to_transform = paths.pop(structure.BrainImageTypes.RegistrationTransform, '')
+    path_to_transform = paths.pop(structure.BrainImageTypes.RegistrationTransform.name, '')
     img = {img_key: sitk.ReadImage(path) for img_key, path in paths.items()}
     transform = sitk.ReadTransform(path_to_transform)
     img = structure.BrainImage(id_, path, img, transform)
@@ -197,8 +197,8 @@ def pre_process(id_: str, paths: dict, **kwargs) -> structure.BrainImage:
                                       len(pipeline_brain_mask.filters) - 1)
 
     # execute pipeline on the brain mask image
-    img.images[structure.BrainImageTypes.BrainMask] = pipeline_brain_mask.execute(
-        img.images[structure.BrainImageTypes.BrainMask])
+    img.images[structure.BrainImageTypes.BrainMask.name] = pipeline_brain_mask.execute(
+        img.images[structure.BrainImageTypes.BrainMask.name])
 
     # construct pipeline for T1w image pre-processing
     pipeline_t1 = fltr.FilterPipeline()
@@ -208,13 +208,13 @@ def pre_process(id_: str, paths: dict, **kwargs) -> structure.BrainImage:
                               len(pipeline_t1.filters) - 1)
     if kwargs.get('skullstrip_pre', False):
         pipeline_t1.add_filter(fltr_prep.SkullStripping())
-        pipeline_t1.set_param(fltr_prep.SkullStrippingParameters(img.images[structure.BrainImageTypes.BrainMask]),
+        pipeline_t1.set_param(fltr_prep.SkullStrippingParameters(img.images[structure.BrainImageTypes.BrainMask.name]),
                               len(pipeline_t1.filters) - 1)
     if kwargs.get('normalization_pre', False):
         pipeline_t1.add_filter(fltr_prep.ImageNormalization())
 
     # execute pipeline on the T1w image
-    img.images[structure.BrainImageTypes.T1w] = pipeline_t1.execute(img.images[structure.BrainImageTypes.T1w])
+    img.images[structure.BrainImageTypes.T1w.name] = pipeline_t1.execute(img.images[structure.BrainImageTypes.T1w.name])
 
     # construct pipeline for T2w image pre-processing
     pipeline_t2 = fltr.FilterPipeline()
@@ -224,13 +224,13 @@ def pre_process(id_: str, paths: dict, **kwargs) -> structure.BrainImage:
                               len(pipeline_t2.filters) - 1)
     if kwargs.get('skullstrip_pre', False):
         pipeline_t2.add_filter(fltr_prep.SkullStripping())
-        pipeline_t2.set_param(fltr_prep.SkullStrippingParameters(img.images[structure.BrainImageTypes.BrainMask]),
+        pipeline_t2.set_param(fltr_prep.SkullStrippingParameters(img.images[structure.BrainImageTypes.BrainMask.name]),
                               len(pipeline_t2.filters) - 1)
     if kwargs.get('normalization_pre', False):
         pipeline_t2.add_filter(fltr_prep.ImageNormalization())
 
     # execute pipeline on the T2w image
-    img.images[structure.BrainImageTypes.T2w] = pipeline_t2.execute(img.images[structure.BrainImageTypes.T2w])
+    img.images[structure.BrainImageTypes.T2w.name] = pipeline_t2.execute(img.images[structure.BrainImageTypes.T2w.name])
 
     # construct pipeline for ground truth image pre-processing
     pipeline_gt = fltr.FilterPipeline()
@@ -240,11 +240,11 @@ def pre_process(id_: str, paths: dict, **kwargs) -> structure.BrainImage:
                               len(pipeline_gt.filters) - 1)
 
     # execute pipeline on the ground truth image
-    img.images[structure.BrainImageTypes.GroundTruth] = pipeline_gt.execute(
-        img.images[structure.BrainImageTypes.GroundTruth])
+    img.images[structure.BrainImageTypes.GroundTruth.name] = pipeline_gt.execute(
+        img.images[structure.BrainImageTypes.GroundTruth.name])
 
     # update image properties to atlas image properties after registration
-    img.image_properties = conversion.ImageProperties(img.images[structure.BrainImageTypes.T1w])
+    img.image_properties = conversion.ImageProperties(img.images[structure.BrainImageTypes.T1w.name])
 
     # extract the features
     feature_extractor = FeatureExtractor(img, **kwargs)
@@ -277,8 +277,8 @@ def post_process(img: structure.BrainImage, segmentation: sitk.Image, probabilit
         pipeline.add_filter(fltr_postp.ImagePostProcessing())
     if kwargs.get('crf_post', False):
         pipeline.add_filter(fltr_postp.DenseCRF())
-        pipeline.set_param(fltr_postp.DenseCRFParams(img.images[structure.BrainImageTypes.T1w],
-                                                     img.images[structure.BrainImageTypes.T2w],
+        pipeline.set_param(fltr_postp.DenseCRFParams(img.images[structure.BrainImageTypes.T1w.name],
+                                                     img.images[structure.BrainImageTypes.T2w.name],
                                                      probability), len(pipeline.filters) - 1)
 
     return pipeline.execute(segmentation)
