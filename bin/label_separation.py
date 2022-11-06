@@ -87,11 +87,11 @@ def label_separation(cfg: DictConfig):
 
     # check if train folder exists
     if not os.path.exists(cfg.pipeline.paths.data_train_dir):
-        os.makedirs(cfg.pipeline.paths.data_train_dir)
+        os.makedirs(cfg.pipeline.paths.data_train_dir, exist_ok=True)
 
     # check if test folder exists
     if not os.path.exists(cfg.pipeline.paths.data_test_dir):
-        os.makedirs(cfg.pipeline.paths.data_test_dir)
+        os.makedirs(cfg.pipeline.paths.data_test_dir, exist_ok=True)
 
     # copy the data into the new directories
     shutil.copytree(cfg.paths.data_train_dir_orig,
