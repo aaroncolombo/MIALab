@@ -13,3 +13,10 @@ params:
                         'coordinates_feature': True,
                         'intensity_feature': True,
                         'gradient_intensity_feature': True }
+  post_process_params: { 'simple_post': True,
+                         'crf_post': False }
+  labels: { 1: 'WhiteMatter',
+            2: 'GreyMatter',
+            3: 'Hippocampus',
+            4: 'Amygdala',
+            5: 'Thalamus' }

@@ -284,7 +284,7 @@ def post_process(img: structure.BrainImage, segmentation: sitk.Image, probabilit
     return pipeline.execute(segmentation)
 
 
-def init_evaluator() -> eval_.Evaluator:
+def init_evaluator(labels) -> eval_.Evaluator:
     """Initializes an evaluator.
 
     Returns:
@@ -294,16 +294,14 @@ def init_evaluator() -> eval_.Evaluator:
     # initialize metrics
     metrics = [metric.DiceCoefficient(),
                metric.HausdorffDistance(percentile=95.0)]
-    # todo: add hausdorff distance, 95th percentile (see metric.HausdorffDistance)
-    warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
 
     # define the labels to evaluate
-    labels = {1: 'WhiteMatter',
-              2: 'GreyMatter',
-              3: 'Hippocampus',
-              4: 'Amygdala',
-              5: 'Thalamus'
-              }
+    # labels = {1: 'WhiteMatter',
+    #           2: 'GreyMatter',
+    #           3: 'Hippocampus',
+    #           4: 'Amygdala',
+    #           5: 'Thalamus'
+    #           }
 
     evaluator = eval_.SegmentationEvaluator(metrics, labels)
     return evaluator

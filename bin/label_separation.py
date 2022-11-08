@@ -56,7 +56,7 @@ def process(id_: str, paths: dict, labels: list):
 
 
 def process_batch(data_batch: t.Dict[structure.BrainImageTypes, structure.BrainImage],
-                  labels: list = None) -> t.List[structure.BrainImage]:
+                  labels: dict = None) -> t.List[structure.BrainImage]:
     """Loads and processes a batch of images.
 
     The processing includes:
@@ -67,9 +67,9 @@ def process_batch(data_batch: t.Dict[structure.BrainImageTypes, structure.BrainI
         data_batch (Dict[structure.BrainImageTypes, structure.BrainImage]): Batch of images to be processed.
         labels (list): Labels to keep.
     """
-
+    labels_list = list(labels.keys())
     params_list = list(data_batch.items())
-    [process(id_, path, labels) for id_, path in params_list]
+    [process(id_, path, labels_list) for id_, path in params_list]
 
 
 @hydra.main(version_base=None, config_path="conf", config_name="config")

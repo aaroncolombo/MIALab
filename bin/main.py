@@ -97,11 +97,11 @@ def main(cfg: DictConfig):
     print('-' * 5, 'Testing...')
 
     # initialize evaluator
-    evaluator = putil.init_evaluator()
+    evaluator = putil.init_evaluator(cfg.pipeline.params.labels)
 
-    # crawl the training image directories
+    # crawl the test image directories
     crawler = futil.FileSystemDataCrawler(cfg.pipeline.paths.data_test_dir,
-                                          cfg.pipeline.params.loading_keys,
+                                          cfg.params.loading_keys_pipeline,
                                           futil.BrainImageFilePathGenerator(),
                                           futil.DataDirectoryFilter())
 
@@ -132,9 +132,9 @@ def main(cfg: DictConfig):
         images_probabilities.append(image_probabilities)
 
     # post-process segmentation and evaluate with post-processing
-    post_process_params = {'simple_post': True}
+    # post_process_params = {'simple_post': True}
     images_post_processed = putil.post_process_batch(images_test, images_prediction, images_probabilities,
-                                                     post_process_params, multi_process=True)
+                                                     cfg.pipeline.params.post_process_params, multi_process=True)
 
     for i, img in enumerate(images_test):
         evaluator.evaluate(images_post_processed[i], img.images[structure.BrainImageTypes.GroundTruth.name],
