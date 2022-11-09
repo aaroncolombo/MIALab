@@ -238,10 +238,9 @@ bin/toy-example-model/
 bin/toy-example-result/
 bin/mia-model/
 bin/mia-result_old/
+bin/multirun
+bin/outputs
 data/
 *.nii.gz
 *.mha
 exercise/randomforest_plots/
-*/mia-result_all
-*/mia-result_big
-*/mia-result_small

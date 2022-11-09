@@ -28,4 +28,4 @@ srun python3 label_separation.py --multirun pipeline=pipeline_big,pipeline_small
 srun python3 main.py --multirun pipeline=pipeline_all,pipeline_big,pipeline_small
 
 # Comparison
-srun pyhton3 comparison_segmentations.py
+srun pyhton3 comparison_segmentation.py
