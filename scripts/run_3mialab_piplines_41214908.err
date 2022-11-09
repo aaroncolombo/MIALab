@@ -1,0 +1,61 @@
+Error executing job with overrides: ['pipeline=pipeline_big']
+Traceback (most recent call last):
+  File "label_separation.py", line 90, in label_separation
+    os.makedirs(cfg.pipeline.paths.data_train_dir)
+  File "/storage/homefs/ac18b057/.conda/envs/mialab/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/storage/homefs/ac18b057/MIALab/bin/../data/train_big/'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+srun: error: bnode012: task 0: Exited with exit code 1
+Error executing job with overrides: ['pipeline=pipeline_big']
+Traceback (most recent call last):
+  File "label_separation.py", line 90, in label_separation
+    os.makedirs(cfg.pipeline.paths.data_train_dir)
+  File "/storage/homefs/ac18b057/.conda/envs/mialab/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/storage/homefs/ac18b057/MIALab/bin/../data/train_big/'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+srun: error: bnode012: task 1: Exited with exit code 1
+In 'config': Could not find 'pipeline/pipline_big'
+
+Available options in 'pipeline':
+	pipeline_all
+	pipeline_big
+	pipeline_small
+Config search path:
+	provider=hydra, path=pkg://hydra.conf
+	provider=main, path=file:///storage/homefs/ac18b057/MIALab/bin/conf
+	provider=schema, path=structured://
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+In 'config': Could not find 'pipeline/pipline_big'
+
+Available options in 'pipeline':
+	pipeline_all
+	pipeline_big
+	pipeline_small
+Config search path:
+	provider=hydra, path=pkg://hydra.conf
+	provider=main, path=file:///storage/homefs/ac18b057/MIALab/bin/conf
+	provider=schema, path=structured://
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+In 'config': Could not find 'pipeline/pipline_big'
+
+Available options in 'pipeline':
+	pipeline_all
+	pipeline_big
+	pipeline_small
+Config search path:
+	provider=hydra, path=pkg://hydra.conf
+	provider=main, path=file:///storage/homefs/ac18b057/MIALab/bin/conf
+	provider=schema, path=structured://
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+srun: error: bnode012: tasks 0-2: Exited with exit code 1
+slurmstepd: error: execve(): pyhton3: No such file or directory
+slurmstepd: error: execve(): pyhton3: No such file or directory
+slurmstepd: error: execve(): pyhton3: No such file or directory
+srun: error: bnode012: tasks 0-2: Exited with exit code 2

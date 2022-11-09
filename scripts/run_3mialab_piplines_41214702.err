@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "label_separation.py", line 9, in <module>
+    import SimpleITK as sitk
+ModuleNotFoundError: No module named 'SimpleITK'
+Traceback (most recent call last):
+  File "label_separation.py", line 9, in <module>
+    import SimpleITK as sitk
+ModuleNotFoundError: No module named 'SimpleITK'
+Traceback (most recent call last):
+  File "label_separation.py", line 9, in <module>
+    import SimpleITK as sitk
+ModuleNotFoundError: No module named 'SimpleITK'
+srun: error: bnode012: tasks 0-2: Exited with exit code 1
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    import SimpleITK as sitk
+ModuleNotFoundError: No module named 'SimpleITK'
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    import SimpleITK as sitk
+ModuleNotFoundError: No module named 'SimpleITK'
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    import SimpleITK as sitk
+ModuleNotFoundError: No module named 'SimpleITK'
+srun: error: bnode012: tasks 0-2: Exited with exit code 1
+slurmstepd: error: execve(): pyhton3: No such file or directory
+slurmstepd: error: execve(): pyhton3: No such file or directory
+slurmstepd: error: execve(): pyhton3: No such file or directory
+srun: error: bnode012: tasks 0-2: Exited with exit code 2

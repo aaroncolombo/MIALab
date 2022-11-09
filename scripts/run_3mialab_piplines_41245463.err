@@ -1,0 +1,52 @@
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+Error executing job with overrides: ['pipeline=pipeline_all']
+Traceback (most recent call last):
+  File "main.py", line 104, in main
+    cfg.pipeline.params.loading_keys,
+omegaconf.errors.ConfigAttributeError: Key 'loading_keys' is not in struct
+    full_key: pipeline.params.loading_keys
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+srun: error: bnode001: task 2: Exited with exit code 1
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+Error executing job with overrides: ['pipeline=pipeline_all']
+Traceback (most recent call last):
+  File "main.py", line 104, in main
+    cfg.pipeline.params.loading_keys,
+omegaconf.errors.ConfigAttributeError: Key 'loading_keys' is not in struct
+    full_key: pipeline.params.loading_keys
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+srun: error: bnode001: task 0: Exited with exit code 1
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+/storage/homefs/ac18b057/MIALab/bin/../mialab/utilities/pipeline_utilities.py:298: UserWarning: Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?
+  warnings.warn('Initialized evaluation with the Dice coefficient. Do you know other suitable metrics?')
+Error executing job with overrides: ['pipeline=pipeline_all']
+Traceback (most recent call last):
+  File "main.py", line 104, in main
+    cfg.pipeline.params.loading_keys,
+omegaconf.errors.ConfigAttributeError: Key 'loading_keys' is not in struct
+    full_key: pipeline.params.loading_keys
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+srun: error: bnode001: task 1: Exited with exit code 1
+slurmstepd: error: execve(): pyhton3: No such file or directory
+slurmstepd: error: execve(): pyhton3: No such file or directory
+slurmstepd: error: execve(): pyhton3: No such file or directory
+srun: error: bnode001: tasks 0-2: Exited with exit code 2

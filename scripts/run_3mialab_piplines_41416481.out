@@ -1,0 +1,1542 @@
+[2022-11-08 22:40:21,902][HYDRA] Launching 2 jobs locally
+[2022-11-08 22:40:21,902][HYDRA] 	#0 : pipeline=pipeline_big
+[2022-11-08 22:40:21,921][HYDRA] Launching 2 jobs locally
+[2022-11-08 22:40:21,921][HYDRA] 	#0 : pipeline=pipeline_big
+[2022-11-08 22:40:21,922][HYDRA] Launching 2 jobs locally
+[2022-11-08 22:40:21,922][HYDRA] 	#0 : pipeline=pipeline_big
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+[2022-11-08 22:40:43,326][HYDRA] 	#1 : pipeline=pipeline_small
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+[2022-11-08 22:40:43,326][HYDRA] 	#1 : pipeline=pipeline_small
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+[2022-11-08 22:40:46,176][HYDRA] 	#1 : pipeline=pipeline_small
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+[2022-11-08 22:41:13,300][HYDRA] Launching 3 jobs locally
+[2022-11-08 22:41:13,300][HYDRA] 	#0 : pipeline=pipeline_all
+[2022-11-08 22:41:13,306][HYDRA] Launching 3 jobs locally
+[2022-11-08 22:41:13,306][HYDRA] 	#0 : pipeline=pipeline_all
+[2022-11-08 22:41:13,384][HYDRA] Launching 3 jobs locally
+[2022-11-08 22:41:13,384][HYDRA] 	#0 : pipeline=pipeline_all
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 4.4988557593896985 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 10.286951174028218 s
+---------- Testing 117122
+ Time elapsed: 10.1050487421453 s
+---------- Testing 120111
+ Time elapsed: 10.239719588309526 s
+---------- Testing 122620
+ Time elapsed: 9.965733595192432 s
+---------- Testing 124422
+ Time elapsed: 9.997526959516108 s
+---------- Testing 118528
+ Time elapsed: 10.198570437729359 s
+---------- Testing 123117
+ Time elapsed: 10.02618436422199 s
+---------- Testing 122317
+ Time elapsed: 10.002573177218437 s
+---------- Testing 123925
+ Time elapsed: 9.825897105969489 s
+---------- Testing 118932
+ Time elapsed: 9.908655676059425 s
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 4.508697668090463 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 10.304947587661445 s
+---------- Testing 117122
+ Time elapsed: 10.0961955152452 s
+---------- Testing 120111
+ Time elapsed: 10.24134679324925 s
+---------- Testing 122620
+ Time elapsed: 9.956662828102708 s
+---------- Testing 124422
+ Time elapsed: 10.02185312192887 s
+---------- Testing 118528
+ Time elapsed: 10.205049716867507 s
+---------- Testing 123117
+ Time elapsed: 10.044877811335027 s
+---------- Testing 122317
+ Time elapsed: 10.032426089048386 s
+---------- Testing 123925
+ Time elapsed: 9.850078420713544 s
+---------- Testing 118932
+ Time elapsed: 9.940727507695556 s
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 4.795470232143998 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 11.447849858552217 s
+---------- Testing 117122
+ Time elapsed: 11.450128347612917 s
+---------- Testing 120111
+ Time elapsed: 11.393129805102944 s
+---------- Testing 122620
+ Time elapsed: 11.248766086064279 s
+---------- Testing 124422
+ Time elapsed: 10.967854744754732 s
+---------- Testing 118528
+ Time elapsed: 11.191690625622869 s
+---------- Testing 123117
+ Time elapsed: 11.184748253785074 s
+---------- Testing 122317
+ Time elapsed: 11.138114496134222 s
+---------- Testing 123925
+ Time elapsed: 11.202885435894132 s
+---------- Testing 118932
+ Time elapsed: 11.23593667615205 s
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     Amygdala     0.441  20.616 
+117122     GreyMatter   0.710  2.236  
+117122     Hippocampus  0.392  17.916 
+117122     Thalamus     0.718  31.369 
+117122     WhiteMatter  0.814  3.000  
+117122-PP  Amygdala     0.441  20.616 
+117122-PP  GreyMatter   0.710  2.236  
+117122-PP  Hippocampus  0.392  17.916 
+117122-PP  Thalamus     0.718  31.369 
+117122-PP  WhiteMatter  0.814  3.000  
+118528     Amygdala     0.371  19.209 
+118528     GreyMatter   0.706  4.000  
+118528     Hippocampus  0.373  19.545 
+118528     Thalamus     0.688  12.410 
+118528     WhiteMatter  0.823  3.000  
+118528-PP  Amygdala     0.371  19.209 
+118528-PP  GreyMatter   0.706  4.000  
+118528-PP  Hippocampus  0.373  19.545 
+118528-PP  Thalamus     0.688  12.410 
+118528-PP  WhiteMatter  0.823  3.000  
+118730     Amygdala     0.458  16.613 
+118730     GreyMatter   0.715  2.236  
+118730     Hippocampus  0.345  19.235 
+118730     Thalamus     0.716  17.493 
+118730     WhiteMatter  0.810  2.236  
+118730-PP  Amygdala     0.458  16.613 
+118730-PP  GreyMatter   0.715  2.236  
+118730-PP  Hippocampus  0.345  19.235 
+118730-PP  Thalamus     0.716  17.493 
+118730-PP  WhiteMatter  0.810  2.236  
+118932     Amygdala     0.427  18.682 
+118932     GreyMatter   0.721  2.449  
+118932     Hippocampus  0.353  18.385 
+118932     Thalamus     0.709  28.071 
+118932     WhiteMatter  0.831  2.449  
+118932-PP  Amygdala     0.427  18.682 
+118932-PP  GreyMatter   0.721  2.449  
+118932-PP  Hippocampus  0.353  18.385 
+118932-PP  Thalamus     0.709  28.071 
+118932-PP  WhiteMatter  0.831  2.449  
+120111     Amygdala     0.427  15.556 
+120111     GreyMatter   0.704  2.236  
+120111     Hippocampus  0.360  18.628 
+120111     Thalamus     0.680  14.036 
+120111     WhiteMatter  0.846  2.236  
+120111-PP  Amygdala     0.427  15.556 
+120111-PP  GreyMatter   0.704  2.236  
+120111-PP  Hippocampus  0.360  18.628 
+120111-PP  Thalamus     0.680  14.036 
+120111-PP  WhiteMatter  0.846  2.236  
+122317     Amygdala     0.492  18.439 
+122317     GreyMatter   0.721  2.236  
+122317     Hippocampus  0.370  18.055 
+122317     Thalamus     0.733  18.193 
+122317     WhiteMatter  0.831  3.000  
+122317-PP  Amygdala     0.492  18.439 
+122317-PP  GreyMatter   0.721  2.236  
+122317-PP  Hippocampus  0.370  18.055 
+122317-PP  Thalamus     0.733  18.193 
+122317-PP  WhiteMatter  0.831  3.000  
+122620     Amygdala     0.471  17.436 
+122620     GreyMatter   0.723  3.606  
+122620     Hippocampus  0.365  18.708 
+122620     Thalamus     0.730  14.000 
+122620     WhiteMatter  0.803  3.000  
+122620-PP  Amygdala     0.471  17.436 
+122620-PP  GreyMatter   0.723  3.606  
+122620-PP  Hippocampus  0.365  18.708 
+122620-PP  Thalamus     0.730  14.000 
+122620-PP  WhiteMatter  0.803  3.000  
+123117     Amygdala     0.409  20.736 
+123117     GreyMatter   0.707  3.606  
+123117     Hippocampus  0.357  18.974 
+123117     Thalamus     0.696  25.338 
+123117     WhiteMatter  0.843  3.162  
+123117-PP  Amygdala     0.409  20.736 
+123117-PP  GreyMatter   0.707  3.606  
+123117-PP  Hippocampus  0.357  18.974 
+123117-PP  Thalamus     0.696  25.338 
+123117-PP  WhiteMatter  0.843  3.162  
+123925     Amygdala     0.467  18.788 
+123925     GreyMatter   0.703  2.236  
+123925     Hippocampus  0.382  19.209 
+123925     Thalamus     0.743  15.395 
+123925     WhiteMatter  0.827  3.162  
+123925-PP  Amygdala     0.467  18.788 
+123925-PP  GreyMatter   0.703  2.236  
+123925-PP  Hippocampus  0.382  19.209 
+123925-PP  Thalamus     0.743  15.395 
+123925-PP  WhiteMatter  0.827  3.162  
+124422     Amygdala     0.530  16.523 
+124422     GreyMatter   0.699  2.449  
+124422     Hippocampus  0.380  17.748 
+124422     Thalamus     0.769  26.306 
+124422     WhiteMatter  0.777  3.162  
+124422-PP  Amygdala     0.530  16.523 
+124422-PP  GreyMatter   0.699  2.449  
+124422-PP  Hippocampus  0.380  17.748 
+124422-PP  Thalamus     0.769  26.306 
+124422-PP  WhiteMatter  0.777  3.162  
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE 
+Amygdala     DICE     MEAN       0.449 
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     Amygdala     0.441  20.616 
+117122     GreyMatter   0.710  2.236  
+117122     Hippocampus  0.392  17.916 
+117122     Thalamus     0.718  31.369 
+117122     WhiteMatter  0.814  3.000  
+117122-PP  Amygdala     0.441  20.616 
+117122-PP  GreyMatter   0.710  2.236  
+117122-PP  Hippocampus  0.392  17.916 
+117122-PP  Thalamus     0.718  31.369 
+117122-PP  WhiteMatter  0.814  3.000  
+118528     Amygdala     0.371  19.209 
+118528     GreyMatter   0.706  4.000  
+118528     Hippocampus  0.373  19.545 
+118528     Thalamus     0.688  12.410 
+118528     WhiteMatter  0.823  3.000  
+118528-PP  Amygdala     0.371  19.209 
+118528-PP  GreyMatter   0.706  4.000  
+118528-PP  Hippocampus  0.373  19.545 
+118528-PP  Thalamus     0.688  12.410 
+118528-PP  WhiteMatter  0.823  3.000  
+118730     Amygdala     0.458  16.613 
+118730     GreyMatter   0.715  2.236  
+118730     Hippocampus  0.345  19.235 
+118730     Thalamus     0.716  17.493 
+118730     WhiteMatter  0.810  2.236  
+118730-PP  Amygdala     0.458  16.613 
+118730-PP  GreyMatter   0.715  2.236  
+118730-PP  Hippocampus  0.345  19.235 
+118730-PP  Thalamus     0.716  17.493 
+118730-PP  WhiteMatter  0.810  2.236  
+118932     Amygdala     0.427  18.682 
+118932     GreyMatter   0.721  2.449  
+118932     Hippocampus  0.353  18.385 
+118932     Thalamus     0.709  28.071 
+118932     WhiteMatter  0.831  2.449  
+118932-PP  Amygdala     0.427  18.682 
+118932-PP  GreyMatter   0.721  2.449  
+118932-PP  Hippocampus  0.353  18.385 
+118932-PP  Thalamus     0.709  28.071 
+118932-PP  WhiteMatter  0.831  2.449  
+120111     Amygdala     0.427  15.556 
+120111     GreyMatter   0.704  2.236  
+120111     Hippocampus  0.360  18.628 
+120111     Thalamus     0.680  14.036 
+120111     WhiteMatter  0.846  2.236  
+120111-PP  Amygdala     0.427  15.556 
+120111-PP  GreyMatter   0.704  2.236  
+120111-PP  Hippocampus  0.360  18.628 
+120111-PP  Thalamus     0.680  14.036 
+120111-PP  WhiteMatter  0.846  2.236  
+122317     Amygdala     0.492  18.439 
+122317     GreyMatter   0.721  2.236  
+122317     Hippocampus  0.370  18.055 
+122317     Thalamus     0.733  18.193 
+122317     WhiteMatter  0.831  3.000  
+122317-PP  Amygdala     0.492  18.439 
+122317-PP  GreyMatter   0.721  2.236  
+122317-PP  Hippocampus  0.370  18.055 
+122317-PP  Thalamus     0.733  18.193 
+122317-PP  WhiteMatter  0.831  3.000  
+122620     Amygdala     0.471  17.436 
+122620     GreyMatter   0.723  3.606  
+122620     Hippocampus  0.365  18.708 
+122620     Thalamus     0.730  14.000 
+122620     WhiteMatter  0.803  3.000  
+122620-PP  Amygdala     0.471  17.436 
+122620-PP  GreyMatter   0.723  3.606  
+122620-PP  Hippocampus  0.365  18.708 
+122620-PP  Thalamus     0.730  14.000 
+122620-PP  WhiteMatter  0.803  3.000  
+123117     Amygdala     0.409  20.736 
+123117     GreyMatter   0.707  3.606  
+123117     Hippocampus  0.357  18.974 
+123117     Thalamus     0.696  25.338 
+123117     WhiteMatter  0.843  3.162  
+123117-PP  Amygdala     0.409  20.736 
+123117-PP  GreyMatter   0.707  3.606  
+123117-PP  Hippocampus  0.357  18.974 
+123117-PP  Thalamus     0.696  25.338 
+123117-PP  WhiteMatter  0.843  3.162  
+123925     Amygdala     0.467  18.788 
+123925     GreyMatter   0.703  2.236  
+123925     Hippocampus  0.382  19.209 
+123925     Thalamus     0.743  15.395 
+123925     WhiteMatter  0.827  3.162  
+123925-PP  Amygdala     0.467  18.788 
+123925-PP  GreyMatter   0.703  2.236  
+123925-PP  Hippocampus  0.382  19.209 
+123925-PP  Thalamus     0.743  15.395 
+123925-PP  WhiteMatter  0.827  3.162  
+124422     Amygdala     0.530  16.523 
+124422     GreyMatter   0.699  2.449  
+124422     Hippocampus  0.380  17.748 
+124422     Thalamus     0.769  26.306 
+124422     WhiteMatter  0.777  3.162  
+124422-PP  Amygdala     0.530  16.523 
+124422-PP  GreyMatter   0.699  2.449  
+124422-PP  Hippocampus  0.380  17.748 
+124422-PP  Thalamus     0.769  26.306 
+124422-PP  WhiteMatter  0.777  3.162  
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE 
+Amygdala     DICE     MEAN       0.449 
+Amygdala     DICE     STD        0.042 
+Amygdala     HDRFDST  MEAN       18.260
+Amygdala     HDRFDST  STD        1.637 
+GreyMatter   DICE     MEAN       0.711 
+GreyMatter   DICE     STD        0.008 
+GreyMatter   HDRFDST  MEAN       2.729 
+GreyMatter   HDRFDST  STD        0.673 
+Hippocampus  DICE     MEAN       0.368 
+Hippocampus  DICE     STD        0.014 
+Hippocampus  HDRFDST  MEAN       18.640
+Hippocampus  HDRFDST  STD        0.578 
+Thalamus     DICE     MEAN       0.718 
+Thalamus     DICE     STD        0.026 
+Thalamus     HDRFDST  MEAN       20.261
+Thalamus     HDRFDST  STD        6.495 
+WhiteMatter  DICE     MEAN       0.821 
+WhiteMatter  DICE     STD        0.019 
+WhiteMatter  HDRFDST  MEAN       2.841 
+WhiteMatter  HDRFDST  STD        0.360 
+[2022-11-08 22:49:32,802][HYDRA] 	#1 : pipeline=pipeline_big
+Amygdala     DICE     STD        0.042 
+Amygdala     HDRFDST  MEAN       18.260
+Amygdala     HDRFDST  STD        1.637 
+GreyMatter   DICE     MEAN       0.711 
+GreyMatter   DICE     STD        0.008 
+GreyMatter   HDRFDST  MEAN       2.729 
+GreyMatter   HDRFDST  STD        0.673 
+Hippocampus  DICE     MEAN       0.368 
+Hippocampus  DICE     STD        0.014 
+Hippocampus  HDRFDST  MEAN       18.640
+Hippocampus  HDRFDST  STD        0.578 
+Thalamus     DICE     MEAN       0.718 
+Thalamus     DICE     STD        0.026 
+Thalamus     HDRFDST  MEAN       20.261
+Thalamus     HDRFDST  STD        6.495 
+WhiteMatter  DICE     MEAN       0.821 
+WhiteMatter  DICE     STD        0.019 
+WhiteMatter  HDRFDST  MEAN       2.841 
+WhiteMatter  HDRFDST  STD        0.360 
+[2022-11-08 22:49:32,802][HYDRA] 	#1 : pipeline=pipeline_big
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     Amygdala     0.441  20.616 
+117122     GreyMatter   0.710  2.236  
+117122     Hippocampus  0.392  17.916 
+117122     Thalamus     0.718  31.369 
+117122     WhiteMatter  0.814  3.000  
+117122-PP  Amygdala     0.441  20.616 
+117122-PP  GreyMatter   0.710  2.236  
+117122-PP  Hippocampus  0.392  17.916 
+117122-PP  Thalamus     0.718  31.369 
+117122-PP  WhiteMatter  0.814  3.000  
+118528     Amygdala     0.371  19.209 
+118528     GreyMatter   0.706  4.000  
+118528     Hippocampus  0.373  19.545 
+118528     Thalamus     0.688  12.410 
+118528     WhiteMatter  0.823  3.000  
+118528-PP  Amygdala     0.371  19.209 
+118528-PP  GreyMatter   0.706  4.000  
+118528-PP  Hippocampus  0.373  19.545 
+118528-PP  Thalamus     0.688  12.410 
+118528-PP  WhiteMatter  0.823  3.000  
+118730     Amygdala     0.458  16.613 
+118730     GreyMatter   0.715  2.236  
+118730     Hippocampus  0.345  19.235 
+118730     Thalamus     0.716  17.493 
+118730     WhiteMatter  0.810  2.236  
+118730-PP  Amygdala     0.458  16.613 
+118730-PP  GreyMatter   0.715  2.236  
+118730-PP  Hippocampus  0.345  19.235 
+118730-PP  Thalamus     0.716  17.493 
+118730-PP  WhiteMatter  0.810  2.236  
+118932     Amygdala     0.427  18.682 
+118932     GreyMatter   0.721  2.449  
+118932     Hippocampus  0.353  18.385 
+118932     Thalamus     0.709  28.071 
+118932     WhiteMatter  0.831  2.449  
+118932-PP  Amygdala     0.427  18.682 
+118932-PP  GreyMatter   0.721  2.449  
+118932-PP  Hippocampus  0.353  18.385 
+118932-PP  Thalamus     0.709  28.071 
+118932-PP  WhiteMatter  0.831  2.449  
+120111     Amygdala     0.427  15.556 
+120111     GreyMatter   0.704  2.236  
+120111     Hippocampus  0.360  18.628 
+120111     Thalamus     0.680  14.036 
+120111     WhiteMatter  0.846  2.236  
+120111-PP  Amygdala     0.427  15.556 
+120111-PP  GreyMatter   0.704  2.236  
+120111-PP  Hippocampus  0.360  18.628 
+120111-PP  Thalamus     0.680  14.036 
+120111-PP  WhiteMatter  0.846  2.236  
+122317     Amygdala     0.492  18.439 
+122317     GreyMatter   0.721  2.236  
+122317     Hippocampus  0.370  18.055 
+122317     Thalamus     0.733  18.193 
+122317     WhiteMatter  0.831  3.000  
+122317-PP  Amygdala     0.492  18.439 
+122317-PP  GreyMatter   0.721  2.236  
+122317-PP  Hippocampus  0.370  18.055 
+122317-PP  Thalamus     0.733  18.193 
+122317-PP  WhiteMatter  0.831  3.000  
+122620     Amygdala     0.471  17.436 
+122620     GreyMatter   0.723  3.606  
+122620     Hippocampus  0.365  18.708 
+122620     Thalamus     0.730  14.000 
+122620     WhiteMatter  0.803  3.000  
+122620-PP  Amygdala     0.471  17.436 
+122620-PP  GreyMatter   0.723  3.606  
+122620-PP  Hippocampus  0.365  18.708 
+122620-PP  Thalamus     0.730  14.000 
+122620-PP  WhiteMatter  0.803  3.000  
+123117     Amygdala     0.409  20.736 
+123117     GreyMatter   0.707  3.606  
+123117     Hippocampus  0.357  18.974 
+123117     Thalamus     0.696  25.338 
+123117     WhiteMatter  0.843  3.162  
+123117-PP  Amygdala     0.409  20.736 
+123117-PP  GreyMatter   0.707  3.606  
+123117-PP  Hippocampus  0.357  18.974 
+123117-PP  Thalamus     0.696  25.338 
+123117-PP  WhiteMatter  0.843  3.162  
+123925     Amygdala     0.467  18.788 
+123925     GreyMatter   0.703  2.236  
+123925     Hippocampus  0.382  19.209 
+123925     Thalamus     0.743  15.395 
+123925     WhiteMatter  0.827  3.162  
+123925-PP  Amygdala     0.467  18.788 
+123925-PP  GreyMatter   0.703  2.236  
+123925-PP  Hippocampus  0.382  19.209 
+123925-PP  Thalamus     0.743  15.395 
+123925-PP  WhiteMatter  0.827  3.162  
+124422     Amygdala     0.530  16.523 
+124422     GreyMatter   0.699  2.449  
+124422     Hippocampus  0.380  17.748 
+124422     Thalamus     0.769  26.306 
+124422     WhiteMatter  0.777  3.162  
+124422-PP  Amygdala     0.530  16.523 
+124422-PP  GreyMatter   0.699  2.449  
+124422-PP  Hippocampus  0.380  17.748 
+124422-PP  Thalamus     0.769  26.306 
+124422-PP  WhiteMatter  0.777  3.162  
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE 
+Amygdala     DICE     MEAN       0.449 
+Amygdala     DICE     STD        0.042 
+Amygdala     HDRFDST  MEAN       18.260
+Amygdala     HDRFDST  STD        1.637 
+GreyMatter   DICE     MEAN       0.711 
+GreyMatter   DICE     STD        0.008 
+GreyMatter   HDRFDST  MEAN       2.729 
+GreyMatter   HDRFDST  STD        0.673 
+Hippocampus  DICE     MEAN       0.368 
+Hippocampus  DICE     STD        0.014 
+Hippocampus  HDRFDST  MEAN       18.640
+Hippocampus  HDRFDST  STD        0.578 
+Thalamus     DICE     MEAN       0.718 
+Thalamus     DICE     STD        0.026 
+Thalamus     HDRFDST  MEAN       20.261
+Thalamus     HDRFDST  STD        6.495 
+WhiteMatter  DICE     MEAN       0.821 
+WhiteMatter  DICE     STD        0.019 
+WhiteMatter  HDRFDST  MEAN       2.841 
+WhiteMatter  HDRFDST  STD        0.360 
+[2022-11-08 22:50:33,181][HYDRA] 	#1 : pipeline=pipeline_big
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 3.5220674201846123 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 8.726849601604044 s
+---------- Testing 117122
+ Time elapsed: 8.585083619691432 s
+---------- Testing 120111
+ Time elapsed: 8.449510797858238 s
+---------- Testing 122620
+ Time elapsed: 8.440119442529976 s
+---------- Testing 124422
+ Time elapsed: 8.386573763564229 s
+---------- Testing 118528
+ Time elapsed: 8.513412538915873 s
+---------- Testing 123117
+ Time elapsed: 8.47647550329566 s
+---------- Testing 122317
+ Time elapsed: 8.449861600995064 s
+---------- Testing 123925
+ Time elapsed: 8.362471803091466 s
+---------- Testing 118932
+ Time elapsed: 8.554576429538429 s
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 3.532480152323842 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 8.773028925061226 s
+---------- Testing 117122
+ Time elapsed: 8.581548393703997 s
+---------- Testing 120111
+ Time elapsed: 8.45687710866332 s
+---------- Testing 122620
+ Time elapsed: 8.401884944178164 s
+---------- Testing 124422
+ Time elapsed: 8.338166752830148 s
+---------- Testing 118528
+ Time elapsed: 8.488933781161904 s
+---------- Testing 123117
+ Time elapsed: 8.41957495175302 s
+---------- Testing 122317
+ Time elapsed: 8.510418076999485 s
+---------- Testing 123925
+ Time elapsed: 8.346893280744553 s
+---------- Testing 118932
+ Time elapsed: 8.526368146762252 s
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+---------- Post-processing 118932
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     GreyMatter   0.700  4.690  
+117122     WhiteMatter  0.789  3.000  
+117122-PP  GreyMatter   0.700  4.690  
+117122-PP  WhiteMatter  0.789  3.000  
+118528     GreyMatter   0.695  6.325  
+118528     WhiteMatter  0.798  2.828  
+118528-PP  GreyMatter   0.695  6.325  
+118528-PP  WhiteMatter  0.798  2.828  
+118730     GreyMatter   0.711  4.000  
+118730     WhiteMatter  0.782  2.828  
+118730-PP  GreyMatter   0.711  4.000  
+118730-PP  WhiteMatter  0.782  2.828  
+118932     GreyMatter   0.713  5.657  
+118932     WhiteMatter  0.805  3.000  
+118932-PP  GreyMatter   0.713  5.657  
+118932-PP  WhiteMatter  0.805  3.000  
+120111     GreyMatter   0.695  5.099  
+120111     WhiteMatter  0.823  2.236  
+120111-PP  GreyMatter   0.695  5.099  
+120111-PP  WhiteMatter  0.823  2.236  
+122317     GreyMatter   0.714  4.243  
+122317     WhiteMatter  0.806  3.000  
+122317-PP  GreyMatter   0.714  4.243  
+122317-PP  WhiteMatter  0.806  3.000  
+122620     GreyMatter   0.716  5.916  
+122620     WhiteMatter  0.776  3.000  
+122620-PP  GreyMatter   0.716  5.916  
+122620-PP  WhiteMatter  0.776  3.000  
+123117     GreyMatter   0.699  6.708  
+123117     WhiteMatter  0.817  3.162  
+123117-PP  GreyMatter   0.699  6.708  
+123117-PP  WhiteMatter  0.817  3.162  
+123925     GreyMatter   0.694  5.000  
+123925     WhiteMatter  0.800  3.000  
+123925-PP  GreyMatter   0.694  5.000  
+123925-PP  WhiteMatter  0.800  3.000  
+124422     GreyMatter   0.693  4.243  
+124422     WhiteMatter  0.751  3.162  
+124422-PP  GreyMatter   0.693  4.243  
+124422-PP  WhiteMatter  0.751  3.162  
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE
+GreyMatter   DICE     MEAN       0.703
+GreyMatter   DICE     STD        0.009
+GreyMatter   HDRFDST  MEAN       5.188
+GreyMatter   HDRFDST  STD        0.886
+WhiteMatter  DICE     MEAN       0.795
+WhiteMatter  DICE     STD        0.020
+WhiteMatter  HDRFDST  MEAN       2.922
+WhiteMatter  HDRFDST  STD        0.252
+[2022-11-08 22:57:06,226][HYDRA] 	#2 : pipeline=pipeline_small
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     GreyMatter   0.700  4.690  
+117122     WhiteMatter  0.789  3.000  
+117122-PP  GreyMatter   0.700  4.690  
+117122-PP  WhiteMatter  0.789  3.000  
+118528     GreyMatter   0.695  6.325  
+118528     WhiteMatter  0.798  2.828  
+118528-PP  GreyMatter   0.695  6.325  
+118528-PP  WhiteMatter  0.798  2.828  
+118730     GreyMatter   0.711  4.000  
+118730     WhiteMatter  0.782  2.828  
+118730-PP  GreyMatter   0.711  4.000  
+118730-PP  WhiteMatter  0.782  2.828  
+118932     GreyMatter   0.713  5.657  
+118932     WhiteMatter  0.805  3.000  
+118932-PP  GreyMatter   0.713  5.657  
+118932-PP  WhiteMatter  0.805  3.000  
+120111     GreyMatter   0.695  5.099  
+120111     WhiteMatter  0.823  2.236  
+120111-PP  GreyMatter   0.695  5.099  
+120111-PP  WhiteMatter  0.823  2.236  
+122317     GreyMatter   0.714  4.243  
+122317     WhiteMatter  0.806  3.000  
+122317-PP  GreyMatter   0.714  4.243  
+122317-PP  WhiteMatter  0.806  3.000  
+122620     GreyMatter   0.716  5.916  
+122620     WhiteMatter  0.776  3.000  
+122620-PP  GreyMatter   0.716  5.916  
+122620-PP  WhiteMatter  0.776  3.000  
+123117     GreyMatter   0.699  6.708  
+123117     WhiteMatter  0.817  3.162  
+123117-PP  GreyMatter   0.699  6.708  
+123117-PP  WhiteMatter  0.817  3.162  
+123925     GreyMatter   0.694  5.000  
+123925     WhiteMatter  0.800  3.000  
+123925-PP  GreyMatter   0.694  5.000  
+123925-PP  WhiteMatter  0.800  3.000  
+124422     GreyMatter   0.693  4.243  
+124422     WhiteMatter  0.751  3.162  
+124422-PP  GreyMatter   0.693  4.243  
+124422-PP  WhiteMatter  0.751  3.162  
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE
+GreyMatter   DICE     MEAN       0.703
+GreyMatter   DICE     STD        0.009
+GreyMatter   HDRFDST  MEAN       5.188
+GreyMatter   HDRFDST  STD        0.886
+WhiteMatter  DICE     MEAN       0.795
+WhiteMatter  DICE     STD        0.020
+WhiteMatter  HDRFDST  MEAN       2.922
+WhiteMatter  HDRFDST  STD        0.252
+[2022-11-08 22:57:06,262][HYDRA] 	#2 : pipeline=pipeline_small
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 3.9612781116738915 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 9.456868982873857 s
+---------- Testing 117122
+ Time elapsed: 9.462364971637726 s
+---------- Testing 120111
+ Time elapsed: 9.402331766672432 s
+---------- Testing 122620
+ Time elapsed: 9.340591105632484 s
+---------- Testing 124422
+ Time elapsed: 9.60450157057494 s
+---------- Testing 118528
+ Time elapsed: 9.396084917709231 s
+---------- Testing 123117
+ Time elapsed: 9.40874167624861 s
+---------- Testing 122317
+ Time elapsed: 9.397406223230064 s
+---------- Testing 123925
+ Time elapsed: 9.42286770325154 s
+---------- Testing 118932
+ Time elapsed: 9.40067685302347 s
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     GreyMatter   0.700  4.690  
+117122     WhiteMatter  0.789  3.000  
+117122-PP  GreyMatter   0.700  4.690  
+117122-PP  WhiteMatter  0.789  3.000  
+118528     GreyMatter   0.695  6.325  
+118528     WhiteMatter  0.798  2.828  
+118528-PP  GreyMatter   0.695  6.325  
+118528-PP  WhiteMatter  0.798  2.828  
+118730     GreyMatter   0.711  4.000  
+118730     WhiteMatter  0.782  2.828  
+118730-PP  GreyMatter   0.711  4.000  
+118730-PP  WhiteMatter  0.782  2.828  
+118932     GreyMatter   0.713  5.657  
+118932     WhiteMatter  0.805  3.000  
+118932-PP  GreyMatter   0.713  5.657  
+118932-PP  WhiteMatter  0.805  3.000  
+120111     GreyMatter   0.695  5.099  
+120111     WhiteMatter  0.823  2.236  
+120111-PP  GreyMatter   0.695  5.099  
+120111-PP  WhiteMatter  0.823  2.236  
+122317     GreyMatter   0.714  4.243  
+122317     WhiteMatter  0.806  3.000  
+122317-PP  GreyMatter   0.714  4.243  
+122317-PP  WhiteMatter  0.806  3.000  
+122620     GreyMatter   0.716  5.916  
+122620     WhiteMatter  0.776  3.000  
+122620-PP  GreyMatter   0.716  5.916  
+122620-PP  WhiteMatter  0.776  3.000  
+123117     GreyMatter   0.699  6.708  
+123117     WhiteMatter  0.817  3.162  
+123117-PP  GreyMatter   0.699  6.708  
+123117-PP  WhiteMatter  0.817  3.162  
+123925     GreyMatter   0.694  5.000  
+123925     WhiteMatter  0.800  3.000  
+123925-PP  GreyMatter   0.694  5.000  
+123925-PP  WhiteMatter  0.800  3.000  
+124422     GreyMatter   0.693  4.243  
+124422     WhiteMatter  0.751  3.162  
+124422-PP  GreyMatter   0.693  4.243  
+124422-PP  WhiteMatter  0.751  3.162  
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE
+GreyMatter   DICE     MEAN       0.703
+GreyMatter   DICE     STD        0.009
+GreyMatter   HDRFDST  MEAN       5.188
+GreyMatter   HDRFDST  STD        0.886
+WhiteMatter  DICE     MEAN       0.795
+WhiteMatter  DICE     STD        0.020
+WhiteMatter  HDRFDST  MEAN       2.922
+WhiteMatter  HDRFDST  STD        0.252
+[2022-11-08 22:59:09,998][HYDRA] 	#2 : pipeline=pipeline_small
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 1.2009653197601438 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 8.346635927446187 s
+---------- Testing 117122
+ Time elapsed: 8.217382651753724 s
+---------- Testing 120111
+ Time elapsed: 8.313243840821087 s
+---------- Testing 122620
+ Time elapsed: 8.233680885285139 s
+---------- Testing 124422
+ Time elapsed: 8.331577942706645 s
+---------- Testing 118528
+ Time elapsed: 8.24194676335901 s
+---------- Testing 123117
+ Time elapsed: 8.319274326786399 s
+---------- Testing 122317
+ Time elapsed: 8.309440302662551 s
+---------- Testing 123925
+ Time elapsed: 8.164920990355313 s
+---------- Testing 118932
+ Time elapsed: 8.16171951405704 s
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 1.2104778997600079 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 8.304775844328105 s
+---------- Testing 117122
+ Time elapsed: 8.238518153317273 s
+---------- Testing 120111
+ Time elapsed: 8.345090840011835 s
+---------- Testing 122620
+ Time elapsed: 8.24246809259057 s
+---------- Testing 124422
+ Time elapsed: 8.32578881829977 s
+---------- Testing 118528
+ Time elapsed: 8.272151078097522 s
+---------- Testing 123117
+ Time elapsed: 8.377075440250337 s
+---------- Testing 122317
+ Time elapsed: 8.28245964832604 s
+---------- Testing 123925
+ Time elapsed: 8.180517663247883 s
+---------- Testing 118932
+ Time elapsed: 8.203011284582317 s
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     Amygdala     0.337  27.514 
+117122     Hippocampus  0.377  23.958 
+117122     Thalamus     0.608  40.025 
+117122-PP  Amygdala     0.337  27.514 
+117122-PP  Hippocampus  0.377  23.958 
+117122-PP  Thalamus     0.608  40.025 
+118528     Amygdala     0.314  23.431 
+118528     Hippocampus  0.357  22.293 
+118528     Thalamus     0.599  22.113 
+118528-PP  Amygdala     0.314  23.431 
+118528-PP  Hippocampus  0.357  22.293 
+118528-PP  Thalamus     0.599  22.113 
+118730     Amygdala     0.379  28.320 
+118730     Hippocampus  0.332  26.401 
+118730     Thalamus     0.588  27.586 
+118730-PP  Amygdala     0.379  28.320 
+118730-PP  Hippocampus  0.332  26.401 
+118730-PP  Thalamus     0.588  27.586 
+118932     Amygdala     0.371  27.532 
+118932     Hippocampus  0.336  24.372 
+118932     Thalamus     0.627  40.137 
+118932-PP  Amygdala     0.371  27.532 
+118932-PP  Hippocampus  0.336  24.372 
+118932-PP  Thalamus     0.627  40.137 
+120111     Amygdala     0.368  27.000 
+120111     Hippocampus  0.337  24.678 
+120111     Thalamus     0.579  25.159 
+120111-PP  Amygdala     0.368  27.000 
+120111-PP  Hippocampus  0.337  24.678 
+120111-PP  Thalamus     0.579  25.159 
+122317     Amygdala     0.392  28.460 
+122317     Hippocampus  0.338  24.779 
+122317     Thalamus     0.597  21.794 
+122317-PP  Amygdala     0.392  28.460 
+122317-PP  Hippocampus  0.338  24.779 
+122317-PP  Thalamus     0.597  21.794 
+122620     Amygdala     0.409  25.729 
+122620     Hippocampus  0.358  24.207 
+122620     Thalamus     0.621  33.971 
+122620-PP  Amygdala     0.409  25.729 
+122620-PP  Hippocampus  0.358  24.207 
+122620-PP  Thalamus     0.621  33.971 
+123117     Amygdala     0.372  25.671 
+123117     Hippocampus  0.337  25.259 
+123117     Thalamus     0.592  21.095 
+123117-PP  Amygdala     0.372  25.671 
+123117-PP  Hippocampus  0.337  25.259 
+123117-PP  Thalamus     0.592  21.095 
+123925     Amygdala     0.399  25.060 
+123925     Hippocampus  0.343  25.942 
+123925     Thalamus     0.627  19.261 
+123925-PP  Amygdala     0.399  25.060 
+123925-PP  Hippocampus  0.343  25.942 
+123925-PP  Thalamus     0.627  19.261 
+124422     Amygdala     0.444  25.807 
+124422     Hippocampus  0.362  23.770 
+124422     Thalamus     0.649  33.615 
+124422-PP  Amygdala     0.444  25.807 
+124422-PP  Hippocampus  0.362  23.770 
+124422-PP  Thalamus     0.649  33.615 
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE 
+Amygdala     DICE     MEAN       0.379 
+Amygdala     DICE     STD        0.035 
+Amygdala     HDRFDST  MEAN       26.452
+Amygdala     HDRFDST  STD        1.508 
+Hippocampus  DICE     MEAN       0.348 
+Hippocampus  DICE     STD        0.014 
+Hippocampus  HDRFDST  MEAN       24.566
+Hippocampus  HDRFDST  STD        1.101 
+Thalamus     DICE     MEAN       0.609 
+Thalamus     DICE     STD        0.021 
+Thalamus     HDRFDST  MEAN       28.476
+Thalamus     HDRFDST  STD        7.498 
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     Amygdala     0.337  27.514 
+117122     Hippocampus  0.377  23.958 
+117122     Thalamus     0.608  40.025 
+117122-PP  Amygdala     0.337  27.514 
+117122-PP  Hippocampus  0.377  23.958 
+117122-PP  Thalamus     0.608  40.025 
+118528     Amygdala     0.314  23.431 
+118528     Hippocampus  0.357  22.293 
+118528     Thalamus     0.599  22.113 
+118528-PP  Amygdala     0.314  23.431 
+118528-PP  Hippocampus  0.357  22.293 
+118528-PP  Thalamus     0.599  22.113 
+118730     Amygdala     0.379  28.320 
+118730     Hippocampus  0.332  26.401 
+118730     Thalamus     0.588  27.586 
+118730-PP  Amygdala     0.379  28.320 
+118730-PP  Hippocampus  0.332  26.401 
+118730-PP  Thalamus     0.588  27.586 
+118932     Amygdala     0.371  27.532 
+118932     Hippocampus  0.336  24.372 
+118932     Thalamus     0.627  40.137 
+118932-PP  Amygdala     0.371  27.532 
+118932-PP  Hippocampus  0.336  24.372 
+118932-PP  Thalamus     0.627  40.137 
+120111     Amygdala     0.368  27.000 
+120111     Hippocampus  0.337  24.678 
+120111     Thalamus     0.579  25.159 
+120111-PP  Amygdala     0.368  27.000 
+120111-PP  Hippocampus  0.337  24.678 
+120111-PP  Thalamus     0.579  25.159 
+122317     Amygdala     0.392  28.460 
+122317     Hippocampus  0.338  24.779 
+122317     Thalamus     0.597  21.794 
+122317-PP  Amygdala     0.392  28.460 
+122317-PP  Hippocampus  0.338  24.779 
+122317-PP  Thalamus     0.597  21.794 
+122620     Amygdala     0.409  25.729 
+122620     Hippocampus  0.358  24.207 
+122620     Thalamus     0.621  33.971 
+122620-PP  Amygdala     0.409  25.729 
+122620-PP  Hippocampus  0.358  24.207 
+122620-PP  Thalamus     0.621  33.971 
+123117     Amygdala     0.372  25.671 
+123117     Hippocampus  0.337  25.259 
+123117     Thalamus     0.592  21.095 
+123117-PP  Amygdala     0.372  25.671 
+123117-PP  Hippocampus  0.337  25.259 
+123117-PP  Thalamus     0.592  21.095 
+123925     Amygdala     0.399  25.060 
+123925     Hippocampus  0.343  25.942 
+123925     Thalamus     0.627  19.261 
+123925-PP  Amygdala     0.399  25.060 
+123925-PP  Hippocampus  0.343  25.942 
+123925-PP  Thalamus     0.627  19.261 
+124422     Amygdala     0.444  25.807 
+124422     Hippocampus  0.362  23.770 
+124422     Thalamus     0.649  33.615 
+124422-PP  Amygdala     0.444  25.807 
+124422-PP  Hippocampus  0.362  23.770 
+124422-PP  Thalamus     0.649  33.615 
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE 
+Amygdala     DICE     MEAN       0.379 
+Amygdala     DICE     STD        0.035 
+Amygdala     HDRFDST  MEAN       26.452
+Amygdala     HDRFDST  STD        1.508 
+Hippocampus  DICE     MEAN       0.348 
+Hippocampus  DICE     STD        0.014 
+Hippocampus  HDRFDST  MEAN       24.566
+Hippocampus  HDRFDST  STD        1.101 
+Thalamus     DICE     MEAN       0.609 
+Thalamus     DICE     STD        0.021 
+Thalamus     HDRFDST  MEAN       28.476
+Thalamus     HDRFDST  STD        7.498 
+----- Training...
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+ Time elapsed: 1.3528304621577263 s
+----- Testing...
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Testing 118730
+ Time elapsed: 9.16332754585892 s
+---------- Testing 117122
+ Time elapsed: 9.12406781874597 s
+---------- Testing 120111
+ Time elapsed: 9.261743273586035 s
+---------- Testing 122620
+ Time elapsed: 9.273271420039237 s
+---------- Testing 124422
+ Time elapsed: 9.41707609873265 s
+---------- Testing 118528
+ Time elapsed: 9.469346120022237 s
+---------- Testing 123117
+ Time elapsed: 9.608312847092748 s
+---------- Testing 122317
+ Time elapsed: 9.586115378886461 s
+---------- Testing 123925
+ Time elapsed: 9.599436569027603 s
+---------- Testing 118932
+ Time elapsed: 9.492596225813031 s
+---------- Post-processing 118730
+---------- Post-processing 117122
+---------- Post-processing 120111
+---------- Post-processing 122620
+---------- Post-processing 124422
+---------- Post-processing 118528
+---------- Post-processing 123117
+---------- Post-processing 122317
+---------- Post-processing 123925
+---------- Post-processing 118932
+
+Subject-wise results...
+SUBJECT    LABEL        DICE   HDRFDST
+117122     Amygdala     0.337  27.514 
+117122     Hippocampus  0.377  23.958 
+117122     Thalamus     0.608  40.025 
+117122-PP  Amygdala     0.337  27.514 
+117122-PP  Hippocampus  0.377  23.958 
+117122-PP  Thalamus     0.608  40.025 
+118528     Amygdala     0.314  23.431 
+118528     Hippocampus  0.357  22.293 
+118528     Thalamus     0.599  22.113 
+118528-PP  Amygdala     0.314  23.431 
+118528-PP  Hippocampus  0.357  22.293 
+118528-PP  Thalamus     0.599  22.113 
+118730     Amygdala     0.379  28.320 
+118730     Hippocampus  0.332  26.401 
+118730     Thalamus     0.588  27.586 
+118730-PP  Amygdala     0.379  28.320 
+118730-PP  Hippocampus  0.332  26.401 
+118730-PP  Thalamus     0.588  27.586 
+118932     Amygdala     0.371  27.532 
+118932     Hippocampus  0.336  24.372 
+118932     Thalamus     0.627  40.137 
+118932-PP  Amygdala     0.371  27.532 
+118932-PP  Hippocampus  0.336  24.372 
+118932-PP  Thalamus     0.627  40.137 
+120111     Amygdala     0.368  27.000 
+120111     Hippocampus  0.337  24.678 
+120111     Thalamus     0.579  25.159 
+120111-PP  Amygdala     0.368  27.000 
+120111-PP  Hippocampus  0.337  24.678 
+120111-PP  Thalamus     0.579  25.159 
+122317     Amygdala     0.392  28.460 
+122317     Hippocampus  0.338  24.779 
+122317     Thalamus     0.597  21.794 
+122317-PP  Amygdala     0.392  28.460 
+122317-PP  Hippocampus  0.338  24.779 
+122317-PP  Thalamus     0.597  21.794 
+122620     Amygdala     0.409  25.729 
+122620     Hippocampus  0.358  24.207 
+122620     Thalamus     0.621  33.971 
+122620-PP  Amygdala     0.409  25.729 
+122620-PP  Hippocampus  0.358  24.207 
+122620-PP  Thalamus     0.621  33.971 
+123117     Amygdala     0.372  25.671 
+123117     Hippocampus  0.337  25.259 
+123117     Thalamus     0.592  21.095 
+123117-PP  Amygdala     0.372  25.671 
+123117-PP  Hippocampus  0.337  25.259 
+123117-PP  Thalamus     0.592  21.095 
+123925     Amygdala     0.399  25.060 
+123925     Hippocampus  0.343  25.942 
+123925     Thalamus     0.627  19.261 
+123925-PP  Amygdala     0.399  25.060 
+123925-PP  Hippocampus  0.343  25.942 
+123925-PP  Thalamus     0.627  19.261 
+124422     Amygdala     0.444  25.807 
+124422     Hippocampus  0.362  23.770 
+124422     Thalamus     0.649  33.615 
+124422-PP  Amygdala     0.444  25.807 
+124422-PP  Hippocampus  0.362  23.770 
+124422-PP  Thalamus     0.649  33.615 
+
+Aggregated statistic results...
+LABEL        METRIC   STATISTIC  VALUE 
+Amygdala     DICE     MEAN       0.379 
+Amygdala     DICE     STD        0.035 
+Amygdala     HDRFDST  MEAN       26.452
+Amygdala     HDRFDST  STD        1.508 
+Hippocampus  DICE     MEAN       0.348 
+Hippocampus  DICE     STD        0.014 
+Hippocampus  HDRFDST  MEAN       24.566
+Hippocampus  HDRFDST  STD        1.101 
+Thalamus     DICE     MEAN       0.609 
+Thalamus     DICE     STD        0.021 
+Thalamus     HDRFDST  MEAN       28.476
+Thalamus     HDRFDST  STD        7.498 

@@ -1,0 +1,99 @@
+[2022-11-05 17:44:30,945][HYDRA] Launching 2 jobs locally
+[2022-11-05 17:44:30,945][HYDRA] 	#0 : pipeline=pipeline_big
+[2022-11-05 17:44:30,945][HYDRA] Launching 2 jobs locally
+[2022-11-05 17:44:30,945][HYDRA] 	#0 : pipeline=pipeline_big
+[2022-11-05 17:44:30,945][HYDRA] Launching 2 jobs locally
+[2022-11-05 17:44:30,945][HYDRA] 	#0 : pipeline=pipeline_big
+[2022-11-05 17:44:31,247][HYDRA] 	#1 : pipeline=pipeline_small
+[2022-11-05 17:44:31,247][HYDRA] 	#1 : pipeline=pipeline_small
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
+[2022-11-05 17:44:51,029][HYDRA] 	#1 : pipeline=pipeline_small
+---------- Processing 113922
+---------- Processing 100307
+---------- Processing 110411
+---------- Processing 100408
+---------- Processing 101107
+---------- Processing 101915
+---------- Processing 101309
+---------- Processing 108828
+---------- Processing 103414
+---------- Processing 115320
+---------- Processing 103111
+---------- Processing 113619
+---------- Processing 111312
+---------- Processing 106016
+---------- Processing 111716
+---------- Processing 114419
+---------- Processing 116524
+---------- Processing 105115
+---------- Processing 105014
+---------- Processing 103818
+---------- Processing 118730
+---------- Processing 117122
+---------- Processing 120111
+---------- Processing 122620
+---------- Processing 124422
+---------- Processing 118528
+---------- Processing 123117
+---------- Processing 122317
+---------- Processing 123925
+---------- Processing 118932
