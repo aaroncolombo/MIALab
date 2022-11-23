@@ -82,7 +82,7 @@ def label_separation(cfg: DictConfig):
             - searches for the ground truth of the data
             - in big structures the labels for the smalls are deleted
             - in small structures the labels for the big are deleted
-            - Input labels will be delelted
+            - Input labels will be deleted
     """
 
     # check if train folder exists
