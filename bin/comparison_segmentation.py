@@ -34,8 +34,13 @@ def plot(result_file: str, result_dir: str):
     """
 
     sns.boxplot(x='LABEL', y='DICE', hue='pipeline', data=result_file)
-    plt.title("Comparison all to big & small label")
+    plt.title("Comparison Dice value all to big & small label")
     plt.savefig(os.path.join(result_dir, 'boxplot_dice.png'), format="png")
+    plt.show()
+
+    sns.boxplot(x='LABEL', y='HDRFDST', hue='pipeline', data=result_file)
+    plt.title("Comparison Hausdorff value all to big & small label")
+    plt.savefig(os.path.join(result_dir, 'boxplot_hdrfst.png'), format="png")
     plt.show()
 
     return 0
