@@ -11,8 +11,8 @@
 #SBATCH --mail-user=zahira.mercadoaufdermaur@students.unibe.ch
 #SBATCH --mail-type=ALL
 #SBATCH --chdir=../bin
-#SBATCH --output=../scripts/%x_%j.out
-#SBATCH --error=../scripts/%x_%j.err
+#SBATCH --output=../scripts/ubelix_files/%x_%j.out
+#SBATCH --error=../scripts/ubelix_files/%x_%j.err
 
 # Load Anaconda3
 module load Anaconda3
