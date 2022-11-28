@@ -11,6 +11,8 @@ import SimpleITK as sitk
 import numpy as np
 import typing as t
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 import hydra
 from omegaconf import DictConfig
@@ -25,11 +27,17 @@ except ImportError:
     import mialab.utilities.file_access_utilities as futil
 
 
-def plot():
+def plot(result_file: str, result_dir: str):
     """
-    TODO: write docstring
+    plot the Dice coefficients per label (i.e. white matter, gray matter, hippocampus, amygdala, thalamus)
+    in a boxplot
     """
-    # TODO: write blot function
+
+    sns.boxplot(x='LABEL', y='DICE', hue='pipeline', data=result_file)
+    plt.title("Comparison all to big & small label")
+    plt.savefig(os.path.join(result_dir, 'boxplot_dice.png'), format="png")
+    plt.show()
+
     return 0
 
 
@@ -53,7 +61,7 @@ def combine(cfg: DictConfig):
     result_dirs = glob.glob(os.path.join(time_result_dir, 'mia-result_*'))
 
     # define empty data frame to combine the interim results
-    df_comb = pd.DataFrame(data={'SUBJECT':[], 'LABEL':[], 'DICE':[], 'HDRFDST':[]})
+    df_comb = pd.DataFrame(data={'SUBJECT': [], 'LABEL': [], 'DICE': [], 'HDRFDST': []})
     for result_dir in result_dirs:
         if 'mia-result_all' in result_dir:
             df_all = pd.DataFrame(pd.read_csv(os.path.join(result_dir, 'results.csv'), sep=";"))
@@ -61,23 +69,23 @@ def combine(cfg: DictConfig):
             df_inter = pd.DataFrame(pd.read_csv(os.path.join(result_dir, 'results.csv'), sep=";"))
             df_comb = pd.merge_ordered(df_comb, df_inter, how='outer')
 
-
     # result dir for the combined data and the plots.
     comb_result_dir = os.path.join(time_result_dir, 'mia-result_combine/')  # to be defined
     os.makedirs(comb_result_dir, exist_ok=True)
 
-    # save the combined results
-    df_comb.columns = ['SUBJECT comb', 'LABEL comb', 'DICE comb', 'HDRFDST comb']
+    # save the combined results and make a column from which pipeline the results are
+    df_comb.columns = ['SUBJECT', 'LABEL', 'DICE', 'HDRFDST']
+    df_comb['pipeline'] = 'small & big'
+    df_all['pipeline'] = 'all'
     df_comb.to_csv(comb_result_dir + 'results_combined.csv', index=True)
 
     # add the assembled results of the different pipelines to the original pipeline to compare the data
-    df_comp = pd.concat([df_all, df_comb], axis=1)
-    # clean up
-    df_comp_clean = df_comp.drop(axis=1, columns=['SUBJECT comb', 'LABEL comb'])
+    df_comp = pd.concat([df_all, df_comb], axis=0, join='outer')
     # save as csv
-    df_comp_clean.to_csv(comb_result_dir + 'results_compare.csv', index=True)
+    df_comp.to_csv(comb_result_dir + 'results_compare.csv', index=True)
 
     # TODO: Plot boxplot
+    plot(df_comp, comb_result_dir)
 
     # dir_all = os.path.join(result_dir_path, 'mia-result_all/results.csv')  # to be defined
     # if not os.path.isfile(dir_all):
