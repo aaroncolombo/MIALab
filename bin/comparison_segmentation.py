@@ -34,12 +34,12 @@ def plot(result_file: str, result_dir: str):
     """
 
     sns.boxplot(x='LABEL', y='DICE', hue='pipeline', data=result_file)
-    plt.title("Comparison Dice value all to big & small label")
+    plt.title("Dice value combined pipeline compared to original pipeline")
     plt.savefig(os.path.join(result_dir, 'boxplot_dice.png'), format="png")
     plt.show()
 
     sns.boxplot(x='LABEL', y='HDRFDST', hue='pipeline', data=result_file)
-    plt.title("Comparison Hausdorff value all to big & small label")
+    plt.title("Hausdorff value combined pipeline compared to original pipeline")
     plt.savefig(os.path.join(result_dir, 'boxplot_hdrfst.png'), format="png")
     plt.show()
 
@@ -80,8 +80,8 @@ def combine(cfg: DictConfig):
 
     # save the combined results and make a column from which pipeline the results are
     df_comb.columns = ['SUBJECT', 'LABEL', 'DICE', 'HDRFDST']
-    df_comb['pipeline'] = 'small & big'
-    df_all['pipeline'] = 'all'
+    df_comb['pipeline'] = 'combined pipeline'
+    df_all['pipeline'] = 'original pipeline'
     df_comb.to_csv(comb_result_dir + 'results_combined.csv', index=True)
 
     # add the assembled results of the different pipelines to the original pipeline to compare the data
@@ -89,7 +89,6 @@ def combine(cfg: DictConfig):
     # save as csv
     df_comp.to_csv(comb_result_dir + 'results_compare.csv', index=True)
 
-    # TODO: Plot boxplot
     plot(df_comp, comb_result_dir)
 
     # dir_all = os.path.join(result_dir_path, 'mia-result_all/results.csv')  # to be defined
