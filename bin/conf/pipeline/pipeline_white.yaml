@@ -1,0 +1,19 @@
+name: pipeline_white
+paths:
+  result_dir: ./multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}/mia-result_white
+  data_train_dir: ${hydra:runtime.cwd}/../data/train_white/
+  data_test_dir: ${hydra:runtime.cwd}/../data/test_white/
+params:
+  n_estimators: 10
+  max_depth: 10
+  pre_process_params: { 'training': True,
+                        'skullstrip_pre': True,
+                        'normalization_pre': True,
+                        'registration_pre': True,
+                        'coordinates_feature': True,
+                        'intensity_feature': True,
+                        'gradient_intensity_feature': True }
+  post_process_params: { 'simple_post': False,
+                         'crf_post': False }
+  loading_keys_labels: [ GroundTruth ]
+  labels: { 1: 'WhiteMatter'}
