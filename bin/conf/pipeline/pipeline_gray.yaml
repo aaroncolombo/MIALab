@@ -5,7 +5,7 @@ paths:
   data_test_dir: ${hydra:runtime.cwd}/../data/test_gray/
 params:
   n_estimators: 10
-  max_depth: 10
+  max_depth: 50
   pre_process_params: { 'training': True,
                         'skullstrip_pre': True,
                         'normalization_pre': True,

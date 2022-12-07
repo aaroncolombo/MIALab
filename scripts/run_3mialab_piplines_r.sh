@@ -3,7 +3,7 @@
 # SLURM Settings
 #SBATCH --job-name="run_3mialab_piplines"
 #SBATCH --time=24:00:00
-#SBATCH --ntasks=3
+#SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=128G
 #SBATCH --partition=epyc2
