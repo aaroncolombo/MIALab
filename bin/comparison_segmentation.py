@@ -40,6 +40,7 @@ def plot(result_file: str, result_dir: str):
     plt.show()
 
     sns.boxplot(x='LABEL', y='HDRFDST', hue='pipeline', data=result_file)
+    plt.ylim(0, 40)
     plt.title("Hausdorff value combined pipeline compared to original pipeline")
     plt.savefig(os.path.join(result_dir, 'boxplot_hdrfst.png'), format="png")
     plt.show()
