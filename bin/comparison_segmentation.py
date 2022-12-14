@@ -34,6 +34,7 @@ def plot(result_file: str, result_dir: str):
     """
 
     sns.boxplot(x='LABEL', y='DICE', hue='pipeline', data=result_file)
+    plt.ylim(0, 1)
     plt.title("Dice value combined pipeline compared to original pipeline")
     plt.savefig(os.path.join(result_dir, 'boxplot_dice.png'), format="png")
     plt.show()
