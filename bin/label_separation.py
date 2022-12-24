@@ -1,6 +1,6 @@
 """Separation of labels
 
-Separates the small and the bigger structure from the test files and puts it to new folder
+Separates the structure from the test files and puts it to new folder
 """
 import shutil
 import os
