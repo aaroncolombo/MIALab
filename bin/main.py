@@ -38,11 +38,10 @@ except ImportError:
 #                 structure.BrainImageTypes.RegistrationTransform]  # the list of data we will load
 
 @hydra.main(version_base=None, config_path="conf", config_name="config")
-def main(cfg: DictConfig):
+def main(cfg: DictConfig) -> None:
     """Brain tissue segmentation using decision forests.
 
     The main routine executes the medical image analysis pipeline:
-
         - Image loading
         - Registration
         - Pre-processing
@@ -51,6 +50,12 @@ def main(cfg: DictConfig):
         - Segmentation using the decision forest classifier model on unseen images
         - Post-processing of the segmentation
         - Evaluation of the segmentation
+
+    Params:
+        cfg (DictConfig): Hydra configuration file containing all parameters.
+
+    Returns:
+        None
     """
 
     # set seed for reproducible results
@@ -66,6 +71,7 @@ def main(cfg: DictConfig):
                                           cfg.params.loading_keys_pipeline,
                                           futil.BrainImageFilePathGenerator(),
                                           futil.DataDirectoryFilter())
+    """Not needed anymore because the pipeline is using hydra."""
     # pre_process_params = {'skullstrip_pre': True,
     #                       'normalization_pre': True,
     #                       'registration_pre': True,
@@ -166,43 +172,6 @@ def main(cfg: DictConfig):
     boxplot.plot(result_file, result_dir)
 
 
-
 if __name__ == "__main__":
     """The program's entry point."""
-    #
-    # script_dir = os.path.dirname(sys.argv[0])
-    #
-    # parser = argparse.ArgumentParser(description='Medical image analysis pipeline for brain tissue segmentation')
-    #
-    # parser.add_argument(
-    #     '--result_dir',
-    #     type=str,
-    #     default=os.path.normpath(os.path.join(script_dir, './mia-result_old')),
-    #     help='Directory for results.'
-    # )
-    #
-    # parser.add_argument(
-    #     '--data_atlas_dir',
-    #     type=str,
-    #     default=os.path.normpath(os.path.join(script_dir, '../data/atlas')),
-    #     help='Directory with atlas data.'
-    # )
-    #
-    # parser.add_argument(
-    #     '--data_train_dir',
-    #     type=str,
-    #     default=os.path.normpath(os.path.join(script_dir, '../data/train/')),
-    #     help='Directory with training data.'
-    # )
-    #
-    # parser.add_argument(
-    #     '--data_test_dir',
-    #     type=str,
-    #     default=os.path.normpath(os.path.join(script_dir, '../data/test/')),
-    #     help='Directory with testing data.'
-    # )
-    #
-    # args = parser.parse_args()
-    # main(args.result_dir, args.data_atlas_dir, args.data_train_dir, args.data_test_dir)
-
     main()
